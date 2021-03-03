@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Photo page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <ion-card-content>
+          <div class="container">
+            <ion-button fill="outline" color="danger" (click)="getCamera()">Take a photo</ion-button><br><br>
+            <img src="{{imgURL}}" height="200" width="200" />
+            <br><br>
+            <ion-button fill="outline" (click)="getUpload()">Upload a photo</ion-button>
+            <ion-button fill="outline" (click)="getUpload()">Share your photo</ion-button>
+          </div>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card>
+  </ion-card>
+</ion-content>
